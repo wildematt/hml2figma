@@ -1,139 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Html2Figma Privacy Policy</title>
-  <meta name="description" content="Privacy Policy for the Html2Figma Chrome extension." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html2Figma - 隐私政策 / Privacy Policy</title>
   <style>
-    :root {
-      color-scheme: light;
-      --bg: #f7f7f8;
-      --card: #ffffff;
-      --text: #1d1d1f;
-      --muted: #5f6368;
-      --line: #e6e8eb;
-      --accent: #0d99ff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "Helvetica Neue", "PingFang SC", "Noto Sans SC", "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
-    .wrap {
-      max-width: 860px;
-      margin: 40px auto;
-      padding: 0 16px;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 26px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-    }
-    h1 { margin: 0 0 8px; font-size: 30px; }
-    h2 {
-      margin: 28px 0 8px;
-      padding-top: 14px;
-      border-top: 1px solid var(--line);
-      font-size: 20px;
-    }
-    h3 { margin: 16px 0 4px; font-size: 16px; }
-    p, li { color: var(--text); }
-    .muted { color: var(--muted); }
-    a { color: var(--accent); }
-    code {
-      background: #f2f6ff;
-      padding: 2px 6px;
-      border-radius: 6px;
-      border: 1px solid #dbe8ff;
-      font-size: 0.92em;
-    }
-    ul { margin-top: 8px; }
-    footer {
-      margin-top: 16px;
-      color: var(--muted);
-      font-size: 14px;
-    }
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.6; color: #333; }
+    h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p, li { margin: 0.5rem 0; }
+    ul { padding-left: 1.25rem; }
+    .lang-en { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #eee; }
+    .updated { color: #666; font-size: 0.9rem; margin-bottom: 1rem; }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <article class="card">
-      <h1>Html2Figma Privacy Policy</h1>
-      <p class="muted">Last updated: March 8, 2026</p>
+  <h1>Html2Figma 隐私政策</h1>
+  <p class="updated">最后更新 / Last updated: 2026-03-10</p>
 
-      <p>
-        This Privacy Policy explains how the <strong>Html2Figma</strong> Chrome extension handles user data.
-      </p>
+  <p>Html2Figma（以下简称「本扩展」）是一款 Chrome 扩展，用于将当前浏览的网页转换为 Figma 设计稿。本隐私政策说明本扩展如何对待用户与页面数据。</p>
 
-      <h2>1. What the extension does</h2>
-      <p>
-        Html2Figma helps users capture webpage structure and visual information, then convert it into content that can be used in Figma.
-      </p>
+  <h2>1. 我们收集的数据</h2>
+  <p>本扩展<strong>不收集、不存储、不上传</strong>任何个人身份信息或浏览历史到开发者服务器。我们不会向任何第三方服务器发送您访问的网页内容或个人信息。</p>
 
-      <h2>2. Data we process</h2>
-      <p>The extension may process the following data when the user actively runs capture:</p>
-      <ul>
-        <li>Current page URL and page title.</li>
-        <li>DOM structure and computed style information needed for conversion.</li>
-        <li>Image/video resource references required for rendering fidelity.</li>
-        <li>User-selected element selector when user chooses partial capture.</li>
-      </ul>
+  <h2>2. 扩展如何访问页面数据</h2>
+  <p>仅在您<strong>主动点击扩展图标</strong>后，本扩展会：</p>
+  <ul>
+    <li>在当前激活的浏览器标签页中注入脚本，用于读取该页面的 DOM 结构、样式和布局；</li>
+    <li>根据您的选择（整页或选中元素）将上述信息转换为设计数据；</li>
+    <li>通过 Figma 插件接口将设计数据发送到您本机已打开的 Figma 应用或 Figma 网页版，以便生成设计稿。</li>
+  </ul>
+  <p>上述处理均在您的设备与您使用的 Figma 环境中完成，数据不会经过我们的服务器。</p>
 
-      <h2>3. How data is used</h2>
-      <ul>
-        <li>Only to provide the core feature: converting webpage content for Figma workflows.</li>
-        <li>Only after user action (for example: clicking the extension button or capture options).</li>
-      </ul>
+  <h2>3. 第三方服务</h2>
+  <p>扩展界面中的工具栏会加载 Google Fonts（fonts.googleapis.com）以显示字体。该请求仅用于加载字体资源，不会携带您的个人或页面数据。Figma 相关数据由 Figma 及其隐私政策管辖。</p>
 
-      <h2>4. Data sharing and transfer</h2>
-      <ul>
-        <li>The extension does not sell personal data.</li>
-        <li>
-          If a user chooses flows that involve sending data to Figma-related endpoints,
-          the captured content is transferred only for processing requested by that user.
-        </li>
-      </ul>
+  <h2>4. 权限说明</h2>
+  <p>我们仅使用 Chrome 扩展所需的以下权限：</p>
+  <ul>
+    <li><strong>activeTab</strong>：仅在您点击扩展时访问当前标签页；</li>
+    <li><strong>scripting</strong>：用于在当前页面注入捕获与工具栏脚本，以完成网页到 Figma 的转换。</li>
+  </ul>
 
-      <h2>5. Data storage and retention</h2>
-      <ul>
-        <li>The extension itself does not maintain a long-term local database of captured page content by default.</li>
-        <li>Any temporary in-memory data exists only during capture/conversion flow.</li>
-      </ul>
+  <h2>5. 数据保留</h2>
+  <p>我们未运营任何用于存储您数据的服务器，因此不存在由我们保留的您的页面或个人信息。</p>
 
-      <h2>6. Permissions rationale</h2>
-      <ul>
-        <li><code>activeTab</code>: used to access the currently active tab only when user triggers the extension.</li>
-        <li><code>scripting</code>: used to inject capture scripts required for page-to-Figma conversion.</li>
-      </ul>
+  <h2>6. 政策更新</h2>
+  <p>我们可能会更新本隐私政策。更新后的版本会发布在本页面，并注明「最后更新」日期。继续使用本扩展即表示您接受更新后的政策。</p>
 
-      <h2>7. Your choices</h2>
-      <ul>
-        <li>You can stop data processing by not triggering capture actions.</li>
-        <li>You can disable or uninstall the extension at any time via Chrome extension settings.</li>
-      </ul>
+  <h2>7. 联系我们</h2>
+  <p>如对本隐私政策或扩展数据处理有疑问，请通过 Chrome 网上应用店中本扩展的「支持」或「开发者信息」渠道与我们联系。</p>
 
-      <h2>8. Contact</h2>
-      <p>
-        If you have privacy questions, contact:<br />
-        <a href="mailto:mattasui@gmail.com">mattasui@gmail.com</a>
-      </p>
-
-      <h2>9. Chinese Summary (中文摘要)</h2>
-      <p>
-        Html2Figma 仅在你主动点击插件执行捕获时处理当前页面数据（如页面结构、样式和资源引用），用于网页到 Figma 的转换。
-        我们不出售个人数据。若你选择发送到 Figma 的流程，数据仅会传输到实现该功能所需的服务端点。
-      </p>
-
-      <footer>
-        This page is intended to be used as the official privacy policy URL for Chrome Web Store submission.
-      </footer>
-    </article>
-  </main>
+  <div class="lang-en">
+    <h1>Html2Figma Privacy Policy</h1>
+    <p>Html2Figma is a Chrome extension that converts the current web page into a Figma design. This policy describes how we handle user and page data.</p>
+    <h2>1. Data We Collect</h2>
+    <p>We do <strong>not</strong> collect, store, or upload any personally identifiable information or browsing history to our servers. We do not send the content of pages you visit or any personal data to any third-party servers.</p>
+    <h2>2. How the Extension Accesses Page Data</h2>
+    <p>Only after you <strong>click the extension icon</strong>, the extension will:</p>
+    <ul>
+      <li>Inject scripts into the active browser tab to read that page’s DOM, styles, and layout;</li>
+      <li>Convert that information into design data based on your choice (full page or selected element);</li>
+      <li>Send the design data to Figma (via the Figma plugin API) on your device or in your Figma session to generate the design.</li>
+    </ul>
+    <p>This processing happens on your device and within your Figma environment; data does not pass through our servers.</p>
+    <h2>3. Third-Party Services</h2>
+    <p>The toolbar may load Google Fonts (fonts.googleapis.com) for display. That request is only for font resources and does not send your personal or page data. Figma-related data is governed by Figma’s privacy policy.</p>
+    <h2>4. Permissions</h2>
+    <p>We only use the permissions required for the extension: <strong>activeTab</strong> (to access the current tab when you click the icon) and <strong>scripting</strong> (to inject capture and toolbar scripts for conversion).</p>
+    <h2>5. Data Retention</h2>
+    <p>We do not operate servers that store your data; we do not retain your page or personal information.</p>
+    <h2>6. Policy Updates</h2>
+    <p>We may update this policy. The updated version will be posted on this page with a new “Last updated” date. Continued use of the extension constitutes acceptance of the updated policy.</p>
+    <h2>7. Contact</h2>
+    <p>For questions about this privacy policy or how the extension handles data, please contact us via the extension’s support or developer information in the Chrome Web Store.</p>
+  </div>
 </body>
 </html>
